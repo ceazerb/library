@@ -73,17 +73,17 @@ public class Library extends Application {
                 try {
                     String name = tfName.getText();
                     String isbn = tfISBN.getText();
-                    String auth = tfAuthor.getText();
-                    String pubG = tfPubG.getText();
+                    String author = tfAuthor.getText();
+                    String publisher = tfPubG.getText();
                     System.out.println(name);
                     System.out.println(isbn);
-                    System.out.println(auth);
-                    System.out.println(pubG);
+                    System.out.println(author);
+                    System.out.println(publisher);
                     
                     Database d = new Database();
                     Connection con = d.openConnection();     
-                    Book b = new Book(name,isbn,auth,pubG);
-                    b.insertBook(con);                    
+                    Book b = new Book(name,isbn,author,publisher);
+                    b.insertbook(con);                    
                     con.close();
                     
                     

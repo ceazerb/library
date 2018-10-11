@@ -11,8 +11,8 @@ import java.sql.*;
 public class Database { 
 
     Connection con;
-    String password = "";
-    String uri = "jdbc:mysql://localhost:3306/library1";
+    String password = "test123";
+    String uri = "jdbc:mysql://localhost:3306/library";
     String user = "root";
     
     public Connection openConnection() throws ClassNotFoundException, SQLException {
@@ -24,5 +24,7 @@ public class Database {
     public void closeConnection() throws SQLException{
     	con.close();
     }
+    
+    
 
 }
