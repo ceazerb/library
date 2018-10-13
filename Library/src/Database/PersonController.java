@@ -1,17 +1,17 @@
 
-package library;
+package Database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 
-public class Person {
+public class PersonController {
     public String person_name;
     public String phone_no;
     public String place;
     
-    public Person(String person_name, String phone_no, String place){
+    public PersonController(String person_name, String phone_no, String place){
         this.person_name = person_name;
         this.phone_no = phone_no;
         this.place = place;

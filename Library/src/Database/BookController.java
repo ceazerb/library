@@ -1,20 +1,18 @@
 
-package library;
+package Database;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import javafx.application.Application;
 
 
-public class Book {
-    
-    public String name;
+public class BookController {
+      public String name;
     public String isbn;
     public String author;
     public String publisher;
     
-    public Book(String name, String isbn, String auth, String pubG){
+    public BookController(String name, String isbn, String auth, String pubG){
         this.name = name;
         this.isbn = isbn;
         this.author = auth;
@@ -34,7 +32,4 @@ public class Book {
         ps.close();           
         
     }
-   
-   
-    
 }
